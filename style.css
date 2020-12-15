@@ -53,7 +53,7 @@ img {
 	justify-content: space-between;
 	width: 100%;
 	height: 100%;
-	padding: 0 10px;
+	padding: 0 15px;
 }
 
 #header .nav-bar .bard h1 {
@@ -69,6 +69,7 @@ img {
 
 #header .nav-list {
     width: 50%;
+    padding: 0 15px;
 }
 
 #header .nav-list ul {
@@ -186,6 +187,19 @@ img {
     background-color: #333;
 }
 /* End hero section */
+
+/* Project section */
+#projects .projects {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+
+#projects .projects-header h1 {
+	margin-bottom: 50px;
+}
+/* End project section */
 
 @keyframes text_reveal_box {
 	50% {
