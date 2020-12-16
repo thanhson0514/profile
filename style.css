@@ -12,6 +12,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+	background-color: #eee;
+}
+
 a {
 	text-decoration: none;
 }
@@ -199,7 +203,180 @@ img {
 #projects .projects-header h1 {
 	margin-bottom: 50px;
 }
+
+#projects .projects-header .section-title {
+	font-size: 4rem;
+	font-weight: 300;
+	color: black;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	text-align: center;
+}
+#projects .projects-header .section-title span {
+	color: crimson;
+}
+
+
+#projects .project-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	height: 350px;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+#projects .project-info {
+	padding: 2rem;
+	flex-basis: 50%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	color: white;
+}
+
+#projects .project-info h1 {
+	font-size: 4rem;
+	font-weight: 500;
+}
+
+#projects .project-info h2 {
+	font-size: 1.4rem;
+	font-weight: 400;
+	margin: 8px 0;
+	font-style: italic;
+	color: #ed4334;
+}
+
+#projects .project-info p {
+	margin: 10px 0;
+	color: white;
+}
+
+#projects .project-info a {
+	border: 1px solid #df4545;
+	background-color: transparent;
+	font-size: 1.2rem;
+	color: #df4545;
+	padding: .85rem 2rem;
+	border-radius: 1rem;
+	transition: .5s ease;
+}
+
+#projects .project-img {
+	flex-basis: 50%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+#projects .project-img:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: .7;
+}
+
+#projects .project-img img {
+	transition: .3s ease transform;
+}
+
+#projects .project-item:hover .project-img img {
+	transform: scale(1.1);
+}
+
+#projects .project-info a:hover {
+	background-color: #df4545;
+	color: #fff;
+}
 /* End project section */
+
+/* About section */
+#about .about {
+	text-align: center;
+	margin: 0 2rem;
+}
+
+#about .col-left {
+	width: 300px;
+	height: 360px;
+}
+
+#about .col-left .about-img {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border: 10px solid #eee;
+}
+
+#about .col-left .about-img::after {
+	content: '';
+	position: absolute;
+	left: -33px;
+	top: 19px;
+	height: 98%;
+	width: 98%;
+	border: 7px solid crimson;
+	z-index: -1;
+}
+
+#about .col-right {
+	width: 600px;
+}
+
+#about .col-right .section-title {
+	font-size: 4rem;
+	font-weight: 500;
+	text-shadow: 3px 2px 1px rgba(31, 30, 30, 0.24);
+}
+
+#about .col-right .section-title span {
+	color: #df4545;
+}
+
+#about .col-right h2 {
+	font-size: 2.5rem;
+	font-weight: 600;
+	letter-spacing: .5rem;
+}
+
+#about .col-right h2 span {
+	color: #3f3ffd;
+	font-size: 2.7rem;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+#about .col-right p {
+	font-size: 15px;
+	margin-bottom: 2rem;
+}
+
+#about .col-right a {
+	padding: 1rem 3rem;
+	border: 1px solid #df4545;
+	color: #000;
+	background-color: rgba(255, 255, 255, 0.78);
+	border-radius: 10px;
+	transition: .4s ease;
+	text-transform: uppercase;
+}
+
+#about .col-right a:hover {
+	background-color: #df4545;
+	color: #fff;
+}
+/* End About section */
 
 @keyframes text_reveal_box {
 	50% {
