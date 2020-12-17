@@ -7,7 +7,7 @@
 }
 
 html {
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'Nunito', sans-serif;
     scroll-behavior: smooth;
 }
@@ -223,7 +223,7 @@ img {
 	align-items: center;
 	justify-content: center;
 	width: 80%;
-	height: 350px;
+	height: 400px;
 	margin: 20px auto;
 	overflow: hidden;
 	border-radius: 10px;
@@ -335,7 +335,7 @@ img {
 }
 
 #about .col-right .section-title {
-	font-size: 4rem;
+	font-size: 5rem;
 	font-weight: 500;
 	text-shadow: 3px 2px 1px rgba(31, 30, 30, 0.24);
 }
@@ -358,7 +358,7 @@ img {
 }
 
 #about .col-right p {
-	font-size: 15px;
+	font-size: 1.5rem;
 	margin-bottom: 2rem;
 }
 
@@ -378,6 +378,156 @@ img {
 }
 /* End About section */
 
+/* Contact section */
+#contact {
+	display: flex;
+	height: 50vh;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 100vw;
+}
+#contact .contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+#contact .section-title {
+	font-size: 4rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-bottom: 3rem;
+}
+
+#contact .section-title span {
+	color: #df4545;
+	text-decoration: underline;
+}
+
+#contact .contact-items {
+	display: flex;
+	padding: 3rem;
+	width: 100vw;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+}
+
+#contact .contact-items .contact-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#contact .contact-items .contact-item .contact-info {
+	font-size: 16px;
+}
+
+#contact .contact-items .contact-item .contact-info a {
+	color: #000;
+}
+
+#contact .contact-items .contact-item i {
+	font-size: 2.8rem;
+	padding: 1.2rem;
+	border: 1px solid #333;
+	border-radius: 50%;
+	transition: .4s ease;
+	cursor: pointer;
+}
+
+.fa-github {
+	color: #000;
+}
+.fa-envelope {
+	color: #ed2323;
+}
+.fa-twitter {
+	color: #4585ee;
+}
+
+#contact .contact-items .contact-item i:hover {
+	transform: scale(1.1);
+}
+
+#contact .contact-items .contact-item .fa-github:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+#contact .contact-items .contact-item .fa-envelope:hover {
+	background-color: #ed2323;
+	color: #fff;
+	border-color: #ed2323;
+}
+
+#contact .contact-items .contact-item .fa-twitter:hover {
+	background-color: #4585ee;
+	color: #fff;
+	border-color: #4585ee;
+}
+/* End Contact section */
+
+/* Footer section */
+#footer {
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+#footer .footer {
+	min-height: 200px;
+	flex-direction: column;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+
+#footer .brand h1 {
+	font-size: 2.5rem;
+	letter-spacing: 1rem;
+	text-transform: uppercase;
+}
+
+#footer .brand span {
+	color: #df4545;
+} 
+
+#footer h2 {
+	color: white;
+	font-weight: 500;
+	font-size: 1.8rem;
+	letter-spacing: .1rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#footer .social-icon {
+	display: flex;
+	margin-bottom: 30px;
+	justify-content: center;
+	align-items: center;
+}
+#footer .social-item {
+	height: 50px;
+	width: 50px;
+	margin: 0 5px;
+}
+#footer .social-item img {
+	filter: grayscale(1);
+	transition: .3s ease filter;
+}
+#footer .social-item:hover img {
+	filter: grayscale(0);
+}
+#footer p {
+	color: white;
+	font-size: 1.3rem;
+}
+/* End Footer section */
+
+/* keyframes */
 @keyframes text_reveal_box {
 	50% {
 		width: 100%;
